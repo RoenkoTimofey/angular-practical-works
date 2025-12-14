@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "lb4": {
+    "lb5": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "lb4:build:production"
+              "buildTarget": "lb5:build:production"
             },
             "development": {
-              "buildTarget": "lb4:build:development"
+              "buildTarget": "lb5:build:development"
             }
           },
           "defaultConfiguration": "development"
