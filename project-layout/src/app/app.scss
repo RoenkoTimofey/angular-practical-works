@@ -1,8 +1,8 @@
 :host {
   display: block;
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  color: #1f2937;
-  background-color: #f8fafc;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
 }
 
 .app {
@@ -14,22 +14,17 @@
 .layout {
   flex: 1;
   display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  align-items: stretch;
-}
-
-app-header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+  padding: 10px;
 }
 
 app-sidebar {
-  width: 240px;
+  width: 200px;
 }
 
 app-main-content {
   flex: 1;
 }
+
+
+
 

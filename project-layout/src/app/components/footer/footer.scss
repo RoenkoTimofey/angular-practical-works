@@ -2,19 +2,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.75rem 1.5rem;
-  background: #0f172a;
-  color: #e2e8f0;
+  padding: 10px 20px;
+  background: #f0f0f0;
+  border-top: 1px solid #ccc;
 }
 
 .footer a {
-  color: inherit;
+  color: #333;
   text-decoration: none;
-  margin-left: 1rem;
-  transition: color 0.2s ease;
+  margin-left: 15px;
 }
 
 .footer a:hover {
-  color: #cbd5f5;
+  text-decoration: underline;
 }
+
+
+
 
