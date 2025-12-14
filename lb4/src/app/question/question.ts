@@ -22,12 +22,12 @@ export class QuestionComponent {
   showCorrect = false;
 
   selectAnswer(index: number): void {
-    selectedAnswer = index;
-    answerSelected.emit(index);
+    this.selectedAnswer = index;
+    this.answerSelected.emit(index);
   }
 
   showAnswer(): void {
-    showCorrect = true;
+    this.showCorrect = true;
   }
 }
 
