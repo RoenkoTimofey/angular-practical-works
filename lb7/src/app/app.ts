@@ -12,18 +12,19 @@ import { ApiService, User, Post } from './api.service';
   styleUrl: './app.css'
 })
 export class App implements OnInit {
-  users$: Observable<User[]> = this.api.getUsers();
+  users$!: Observable<User[]>;
 
   private selectedUserId$ = new BehaviorSubject<number | null>(null);
 
   posts$: Observable<Post[]> = this.selectedUserId$.pipe(
-    filter((id): id is number => id !== null),
-    switchMap((id) => this.api.getPostsByUserId(id))
+    filter((id: number | null): id is number => id !== null),
+    switchMap((id: number) => this.api.getPostsByUserId(id))
   );
 
   constructor(private api: ApiService) {}
 
   ngOnInit(): void {
+    this.users$ = this.api.getUsers();
     this.selectUser(1);
   }
 
