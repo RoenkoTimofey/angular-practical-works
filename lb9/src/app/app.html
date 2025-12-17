@@ -28,12 +28,6 @@
     <p><strong>Всього елементів:</strong> {{ items.length }}</p>
     <p><strong>Знайдено:</strong> {{ (items | filterByField: searchField : searchText).length }}</p>
     <p><strong>Пайп:</strong> <span class="pipe-status">Чистий (pure: true)</span></p>
-    <p class="note">
-      <strong>Примітка:</strong> З чистим пайпом (pure: true) додавання нового елемента не оновлює відфільтрований список.
-      Змініть pure на false у filter-by-field.pipe.ts, щоб побачити різницю.
-    </p>
-  </div>
-
   <ul class="items-list">
     <li *ngFor="let item of items | filterByField: searchField : searchText">
       <strong>{{ item.name }}</strong> ({{ item.category }}) — {{ item.description }}
