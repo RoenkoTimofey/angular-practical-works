@@ -17,7 +17,7 @@ import { PRODUCTS } from './products.data';
         <p><strong>ID:</strong> {{ product()?.id }}</p>
         <p><strong>Назва:</strong> {{ product()?.name }}</p>
         <p><strong>Опис:</strong> {{ product()?.description }}</p>
-        <p><strong>Ціна:</strong> ${{ product()?.price }}</p>
+        <p><strong>Ціна:</strong> {{ '$' + (product()?.price ?? '') }}</p>
       </ng-container>
 
       <ng-template #notFound>

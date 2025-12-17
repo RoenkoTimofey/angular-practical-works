@@ -16,7 +16,7 @@ import { PRODUCTS } from './products.data';
       <ul>
         <li *ngFor="let p of products">
           <a [routerLink]="['/products', p.id]">
-            {{ p.name }} — ${{ p.price }}
+            {{ p.name }} — {{ '$' + p.price }}
           </a>
         </li>
       </ul>
